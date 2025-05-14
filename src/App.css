@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+    --color-brand: #f5e8c7;
+    --color-brand-button: #ff6f61;
+    --color-brand-brown: #3e2f2a;
+    --color-brand-card-bg: #c9e4f5;
+
+    --color-secondary: #a8d5ba;
+    --color-warning: #d9a75f;
+
+    --color-neutral-light: #ece8e1;
+    --color-neutral-dark: #5d4037;
+
+    --color-gray-focus: #8177631a;
+
+    --font-sans: "Montserrat", sans-serif;
+
+    --breakpoint-desktop: 69.75rem;
+
+    --w-desktop: 69.75rem;
+}
+
+body {
+    color: theme(--color-brand-brown);
+}
+
+.base-container {
+    margin-inline: auto;
+    @apply @container max-w-[1116px] max-desktop:px-3;
+}
