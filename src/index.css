@@ -3,3 +3,7 @@
 :root {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
+
+*{
+    scroll-behavior: smooth;
+}

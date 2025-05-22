@@ -27,5 +27,5 @@ body {
 
 .base-container {
     margin-inline: auto;
-    @apply @container max-w-[1116px] max-desktop:px-3;
+    @apply @container max-w-[1116px] w-full max-desktop:px-3;
 }

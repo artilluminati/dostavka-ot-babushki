@@ -1,17 +1,17 @@
-import logo from "/logo.svg";
-import { MagnifyingGlassIcon } from "@heroicons/react/16/solid";
+
+import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router";
 import HeaderNavLink from "./HeaderNavLink";
 import CartButton from "../Buttons/CartButton";
+import Logo from "../Logo";
+import HeaderHashLink from "./HeaderHashLink";
 
 export default function Header() {
     return (
         <header className="py-4 bg-white">
             <div className="base-container flex justify-between">
                 <div className="flex gap-8">
-                    <div className="logo">
-                        <img src={logo} alt="От Бабушки" />
-                    </div>
+                    <Logo/>
                     <div className="flex gap-6 items-center font-bold">
                         <label
                             htmlFor="headerSearch"
@@ -26,8 +26,8 @@ export default function Header() {
                             />
                         </label>
                         <HeaderNavLink to="/catalog">Каталог</HeaderNavLink>
-                        <HeaderNavLink to="/#about">О нас</HeaderNavLink>
-                        <HeaderNavLink to="/#contact">Контакты</HeaderNavLink>
+                        <HeaderHashLink to="/#about">О нас</HeaderHashLink>
+                        <HeaderHashLink to="/#contact">Контакты</HeaderHashLink>
                     </div>
                 </div>
                 <div>

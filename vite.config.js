@@ -12,5 +12,21 @@ export default defineConfig({
             },
         },
     },
-    plugins: [react(), tailwindcss()],
+    plugins: [
+        react({
+            babel: {
+                plugins: [
+                    [
+                        "babel-plugin-styled-components",
+                        {
+                            displayName: false,
+                            fileName: false,
+                            namespace: "ot-babushki",
+                        },
+                    ],
+                ],
+            },
+        }),
+        tailwindcss(),
+    ],
 });

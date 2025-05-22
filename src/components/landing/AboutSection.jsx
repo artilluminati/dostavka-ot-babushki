@@ -6,7 +6,7 @@ import AboutSectionCard from "./AboutSectionCard";
 
 export default function AboutSection() {
     return (
-        <section className="pt-[120px]">
+        <section className="pt-[120px]" id="about">
             <h2 className="text-5xl font-black text-center mb-8">
                 Как мы работаем?
             </h2>
