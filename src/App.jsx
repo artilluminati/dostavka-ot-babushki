@@ -1,9 +1,8 @@
-import { useState } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router";
 import Home from "./pages/Home";
 import { CartProvider } from "./Context/CartContext";
-import Error404 from "./pages/errors/error404";
+import Error404 from "./pages/errors/Error404";
 import Catalog from "./pages/Catalog";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
