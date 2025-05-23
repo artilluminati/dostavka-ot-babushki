@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-import { Button } from "./components/Button";
 import { BrowserRouter, Routes, Route } from "react-router";
 import Home from "./pages/Home";
 import { CartProvider } from "./Context/CartContext";
@@ -8,6 +7,7 @@ import Error404 from "./pages/errors/error404";
 import Catalog from "./pages/Catalog";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
+import SearchResults from "./pages/SearchResults";
 
 function App() {
     return (
@@ -18,6 +18,7 @@ function App() {
                     <Route path="/catalog" element={<Catalog />} />
                     <Route path="/product/:id" element={<Product />} />
                     <Route path="/cart" element={<Cart />} />
+                    <Route path="/search" element={<SearchResults />} />
                     <Route path="*" element={<Error404 />} />
                 </Routes>
             </BrowserRouter>
