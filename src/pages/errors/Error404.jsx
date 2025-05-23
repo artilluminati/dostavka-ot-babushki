@@ -1,11 +1,9 @@
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import { Button } from "../../components/BrandButton";
-import { NavLink, useNavigate } from "react-router";
+import { NavLink } from "react-router";
 
 export default function Error404() {
-    const navigate = useNavigate();
-
     return (
         <div className="h-[100vh] flex flex-col justify-between overflow-y-scroll">
             <Header />
